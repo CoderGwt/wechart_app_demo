@@ -1,11 +1,40 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/data/data",
+    "pages/center/center"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#262626",
+    "navigationBarTitleText": "基础知识汇总",
+    "backgroundcolor":"#f0f0f0"
+  },
+  "tabBar": {
+    "color": "D78B09",
+    "selectedColor": "orange",
+    "backgroundColor": "#FECA49",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "icons/home-active.png",
+        "selectedIconPath": "icons/home-default.png"
+      },
+      {
+        "text": "数据",
+        "pagePath": "pages/data/data",
+        "iconPath": "icons/cards-active.png",
+        "selectedIconPath": "icons/cards-default.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/center/center",
+        "iconPath": "icons/face-active.png",
+        "selectedIconPath": "icons/face-default.png"
+      }
+    ]
+
   }
 }
