@@ -18,6 +18,7 @@ Page({
     "circular": true,
     "number1": 12,
     "number2": 32,
+    "inputValue": "",
 
     // checkbox
     "items": [
@@ -44,6 +45,15 @@ Page({
 
   checkboxChange: function(data){
     console.log(data.detail.value)
+  },
+
+  bindInput:function(data){
+    console.log(data);
+    console.log(data.detail);
+    console.log(data.detail.value)
+    this.setData({
+      inputValue: data.detail.value
+    })
   }
 
 })
