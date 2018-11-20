@@ -57,12 +57,22 @@
         <checkbox-group bindchange="checkboxChange">
             <label wx:for="{{items}}">
               <checkbox value="{{item.name}}" checked="{{checked}}"/>{{item.value}}
+              <view></view>
             </label>
         </checkbox-group>
     </view>
     
   </view>
-  
+
+  <!-- input 输入框 -->
+  <view class="input">
+    输入框：{{inputValue}}
+    <input type='text' placeholder="文本" bindinput='bindInput'></input>
+    <input type='text' password='{{true}}'></input>
+    <input type='number' placeholder='数字' maxlength='6'></input>
+    <input type='idcard' placeholder='身份证'></input>
+    <input type='digit' placeholder='带小数点'></input>
+  </view>
 
 
 </view>
