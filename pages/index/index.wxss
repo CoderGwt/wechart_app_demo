@@ -8,3 +8,16 @@
   font-size: 72rpx;
   padding: 20rpx;
 }
+
+
+.button .hover-default{
+  background-color: #666666;
+}
+
+.button .hover-primary{
+  background-color: red;
+}
+
+.button .hover-warn{
+  background-color: green;
+}
