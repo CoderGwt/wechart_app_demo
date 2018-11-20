@@ -19,11 +19,15 @@ Page({
     "number1": 12,
     "number2": 32,
 
-    // button
-    // "defaultSize": "default",
-    // "loading": false,
-    // "disabled": false,
-    // 'type': 'primary'
+    // checkbox
+    "items": [
+      {name: "CHINA", value: "中国", checked: "true"},
+      {name: "UK", value: "英国"},
+      {name: "USA", value: "美国"},
+      {name: "FRANCE", value: "法国"},
+      {name: "JAPAN", value: "日本"},
+    ]
+
   },
 
   default: function(data){
@@ -36,6 +40,10 @@ Page({
 
   warn: function(data){
     console.log("warn")
+  },
+
+  checkboxChange: function(data){
+    console.log(data.detail.value)
   }
 
 })
