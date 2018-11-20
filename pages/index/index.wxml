@@ -17,4 +17,10 @@
     <i class='iconfont icon-weibo'></i>
   </view>
 
+  <view class="static_data">
+    <text>{{ number1 }}+</text>
+    <text>{{ number2 }}=</text>
+    <text>{{ number1 + number2 }}</text>
+  </view>
+
 </view>
