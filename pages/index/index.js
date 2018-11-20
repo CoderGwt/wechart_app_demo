@@ -17,6 +17,25 @@ Page({
     "duration": 1000,
     "circular": true,
     "number1": 12,
-    "number2": 32
+    "number2": 32,
+
+    // button
+    // "defaultSize": "default",
+    // "loading": false,
+    // "disabled": false,
+    // 'type': 'primary'
+  },
+
+  default: function(data){
+    console.log("default")
+  },
+
+  primary: function(data){
+    console.log("primary")
+  },
+
+  warn: function(data){
+    console.log("warn")
   }
+
 })
