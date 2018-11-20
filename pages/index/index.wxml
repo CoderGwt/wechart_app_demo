@@ -26,7 +26,19 @@
 
   <!-- 进度条 -->
   <view class="process">
-      <progress percent="100" show-info stroke-width='10' font-size="20" activeColor="green" backgroundColor="#ccc" active="{{true}}"/>
+      <progress percent="32" show-info stroke-width='10' font-size="20" activeColor="green" backgroundColor="#ccc" active="{{true}}"/>
+  </view>
+
+
+  <!-- 按钮样式/事件 -->
+  <view class="button">
+    <button type="default" size="deafult" loading="{{true}}" plain="{{true}}" disabled="{{true}}" bindtap="default" hover-class="hover_default">default</button>
+
+    <button type="primary" loading="{{false}}" plain="{{false}}" disabled="{{false}}" bindtap="primary" hover-class="hover-primary">primary</button>
+
+
+    <button type="warn" size="defaultSize" bindtap="warn" hover-class="hover-warn">warn</button>
+
   </view>
 
 </view>
