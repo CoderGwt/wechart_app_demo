@@ -17,10 +17,16 @@
     <i class='iconfont icon-weibo'></i>
   </view>
 
+  <!-- 加载数据 -->
   <view class="static_data">
     <text>{{ number1 }}+</text>
     <text>{{ number2 }}=</text>
     <text>{{ number1 + number2 }}</text>
+  </view>
+
+  <!-- 进度条 -->
+  <view class="process">
+      <progress percent="100" show-info stroke-width='10' font-size="20" activeColor="green" backgroundColor="#ccc" active="{{true}}"/>
   </view>
 
 </view>
