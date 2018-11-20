@@ -54,6 +54,15 @@ Page({
     this.setData({
       inputValue: data.detail.value
     })
+  },
+
+  // 表单点击提交事件
+  bindSubmit: function(e){
+    console.log("点击提交按钮，表单数据 ", e.detail.value)
+  },
+
+  bindReset: function(e){
+    console.log("点击了重置按钮")
   }
 
 })
