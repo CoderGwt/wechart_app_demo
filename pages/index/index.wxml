@@ -32,7 +32,8 @@
 
   <!-- 按钮样式/事件 -->
   <view class="button">
-    <button type="default" size="deafult" loading="{{true}}" plain="{{true}}" disabled="{{true}}" bindtap="default" hover-class="hover_default">default</button>
+    <button type="default" size="deafult" loading="{{true}}" plain="{{true}}" 
+    disabled="{{true}}" bindtap="default" hover-class="hover_default">default</button>
 
     <button type="primary" loading="{{false}}" plain="{{false}}" disabled="{{false}}" bindtap="primary" hover-class="hover-primary">primary</button>
 
@@ -40,5 +41,28 @@
     <button type="warn" size="defaultSize" bindtap="warn" hover-class="hover-warn">warn</button>
 
   </view>
+
+  <!-- 多选框 -->
+  <view class='checkbox'>
+    <view>
+        <checkbox-group>
+            <checkbox value="中国" disabled="{{true}}">中国</checkbox>
+            <checkbox value="英国" checked="{{true}}" color="red">英国</checkbox>
+            <checkbox value="美国">美国</checkbox>
+        </checkbox-group>
+    </view>
+
+    <view>
+        <!-- 多选框点击选择，获取checkbox的值  -->
+        <checkbox-group bindchange="checkboxChange">
+            <label wx:for="{{items}}">
+              <checkbox value="{{item.name}}" checked="{{checked}}"/>{{item.value}}
+            </label>
+        </checkbox-group>
+    </view>
+    
+  </view>
+  
+
 
 </view>
