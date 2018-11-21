@@ -116,4 +116,36 @@
 
     
     </form>
+
+
+    <view class='picker'>
+        <text>picker 选择器，暂时跳过</text>
+    </view>
+
+    <!-- slider -->
+    <view class='slider'>
+    <view class='section'>
+        <text>设置step</text>
+        <view>
+          <slider min="0" max="100" step="5" show-value />
+        </view>
+    </view>
+
+    <view class='section'>
+        <text>禁用</text>
+        <view>
+          <slider min="20" max="100" step="5" show-value disabled/>
+        </view>
+    </view>
+
+
+    <view class='section'>
+        <text>使用</text>
+        <view>
+          <slider min="20" max="100" show-value backgroundColor='#ccc' activeColor='green' block-color='green' block-size='20' bindchange='sliderChange' bindchanging='bindChanging'/>
+        </view>
+    </view>
+      
+    </view>
+
 </view>
