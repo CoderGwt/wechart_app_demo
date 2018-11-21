@@ -20,6 +20,9 @@ Page({
     "number2": 32,
     "inputValue": "",
 
+    "height": 20,
+    "focus": false,
+
     // checkbox
     "items": [
       {name: "CHINA", value: "中国", checked: "true"},
@@ -86,6 +89,26 @@ Page({
 
   switchBindReset: function(e){
     console.log("点击了重新选择");
+  },
+
+  // text 
+  textSubmit: function(e){
+    console.log(e);
+    console.log(e.detail.value);
+    console.log(e.detail.value.content);
+  },
+
+  bindButtonTap: function () {
+    this.setData({
+      focus: true
+    })
+  },
+  bindTextAreaBlur: function (e) {
+    console.log(e.detail.value)
+  },
+  bindFormSubmit: function (e) {
+    console.log(e.detail.value.textarea)
   }
+
 
 })
