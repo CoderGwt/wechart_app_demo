@@ -74,6 +74,18 @@ Page({
   // 拖动过程中触发的事件
   bindChanging: function(e){
     console.log(e.detail.value)
+  },
+
+
+  // switch 
+  switchBindSubmit: function(e){
+    console.log(e);
+    console.log(e.detail);
+    console.log(e.detail.value)
+  },
+
+  switchBindReset: function(e){
+    console.log("点击了重新选择");
   }
 
 })
