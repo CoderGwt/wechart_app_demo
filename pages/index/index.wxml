@@ -15,6 +15,20 @@
     <!-- 用了一个比较笨的方法， 到时候问技术 -->
     <i class='iconfont icon-user'></i>
     <i class='iconfont icon-weibo'></i>
+
+    <!-- icon 图标 -->
+    <view class='icon'>
+      <icon type='success' size='40' name='success' bindtap='iconSuccess'></icon>
+      <icon type='success_no_circle' size='40' name='success_no_circle' bindtap='iconSuccessNoCircle'></icon>
+      <icon type='info' size='40' name='info' bindtap='iconInfo'></icon>
+      <icon type='warn' size='40' name='warn' bindtap='iconWarn'></icon>
+      <icon type='waiting' size='40' name='waiting' bindtap='iconWaiting'></icon>
+      <icon type='cancel' size='40' name='cacel' bindtap='iconCacel'></icon>
+      <icon type='download' size='40' name='download' bindtap='iconDownload'></icon>
+      <icon type='search' size='40' name='search' bindtap='iconSearch'></icon>
+      <icon type='clear' size='40' name='clear' bindtap='iconClear'></icon>
+
+    </view>
   </view>
 
   <!-- 加载数据 -->
