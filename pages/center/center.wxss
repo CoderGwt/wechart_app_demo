@@ -1,1 +1,16 @@
 /* pages/center/center.wxss */
+page{
+  width:750rpx;
+}
+
+.nav{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #ccc;
+}
+
+.nav .content{
+  width: 100%;
+  height: 100%;
+  background-color: #666;
+}
