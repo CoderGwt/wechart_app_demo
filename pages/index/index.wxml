@@ -124,28 +124,56 @@
 
     <!-- slider -->
     <view class='slider'>
-    <view class='section'>
-        <text>设置step</text>
-        <view>
-          <slider min="0" max="100" step="5" show-value />
-        </view>
-    </view>
+      <view class='section'>
+          <text>设置step</text>
+          <view>
+            <slider min="0" max="100" step="5" show-value />
+          </view>
+      </view>
 
-    <view class='section'>
-        <text>禁用</text>
-        <view>
-          <slider min="20" max="100" step="5" show-value disabled/>
-        </view>
-    </view>
+      <view class='section'>
+          <text>禁用</text>
+          <view>
+            <slider min="20" max="100" step="5" show-value disabled/>
+          </view>
+      </view>
 
 
-    <view class='section'>
-        <text>使用</text>
-        <view>
-          <slider min="20" max="100" show-value backgroundColor='#ccc' activeColor='green' block-color='green' block-size='20' bindchange='sliderChange' bindchanging='bindChanging'/>
-        </view>
-    </view>
+      <view class='section'>
+          <text>使用</text>
+          <view>
+            <slider min="20" max="100" show-value backgroundColor='#ccc' activeColor='green' block-color='green' block-size='20' bindchange='sliderChange' bindchanging='bindChanging'/>
+          </view>
+      </view>
       
+    </view>
+
+
+    <!-- switch -->
+    <view class='switch'>
+      <form bindsubmit='switchBindSubmit' bindreset='switchBindReset'>
+         <view>
+          <text>选中</text>
+          <switch checked='{{true}}' name="select"></switch>
+        </view>
+      
+        <view>
+          <text>禁用</text>
+          <switch disabled name='disable' checked='{{true}}' color='#ddd'></switch>
+        </view>
+
+        <view>
+          <text>样式为checkbox</text>
+          <switch type='checkbox' name='checkboxs'></switch>
+        </view>
+
+        <view class='btn'>
+          <button formType='submit' type='primary' size='mini'>提交测试</button>
+          <button form-type='reset' type='warn' size='mini'>重新选择</button>
+        </view>
+        
+      </form>
+        
     </view>
 
 </view>
