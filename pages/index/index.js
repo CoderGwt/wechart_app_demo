@@ -63,6 +63,17 @@ Page({
 
   bindReset: function(e){
     console.log("点击了重置按钮")
+  },
+
+
+  // slider change
+  // 完成一次拖动后触发的事件
+  sliderChange: function(e){
+    console.log(e.detail.value);
+  },
+  // 拖动过程中触发的事件
+  bindChanging: function(e){
+    console.log(e.detail.value)
   }
 
 })
