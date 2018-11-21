@@ -108,7 +108,38 @@ Page({
   },
   bindFormSubmit: function (e) {
     console.log(e.detail.value.textarea)
-  }
+  },
+
+
+  // icon 图标
+  iconSuccess: function(e){
+    console.log("点击了success")
+  },
+  iconSuccessNoCircle: function (e) {
+    console.log("点击了iconSuccessNoCircle")
+  },
+  iconInfo: function (e) {
+    console.log("点击了iconInfo")
+  },
+  iconWarn: function (e) {
+    console.log("点击了iconWarn")
+  },
+
+  iconWaiting: function (e) {
+    console.log("点击了iconWaiting")
+  },
+  iconCacel: function (e) {
+    console.log("iconCacel")
+  },
+  iconDownload: function (e) {
+    console.log("点击了iconDownload")
+  },
+  iconSearch: function (e) {
+    console.log("点击了iconSearch")
+  },
+  iconClear: function (e) {
+    console.log("点击了iconClear")
+  },
 
 
 })
