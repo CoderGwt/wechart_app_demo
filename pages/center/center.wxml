@@ -1,2 +1,6 @@
 <!--pages/center/center.wxml-->
-<text>pages/center/center.wxml</text>
+<!-- navigator （ 相当于html中的a标签 ) -->
+<view class='nav'>
+  <navigator class='content' url="../index/index" open-type='switchTab'>
+  </navigator>
+</view>
