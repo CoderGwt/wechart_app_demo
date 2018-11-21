@@ -1,6 +1,6 @@
 <view class='contain'>
   <view class='banner'>
-  <!-- 轮播图 -->
+    <!-- 轮播图 -->
     <swiper indicator-dots='{{indicatorDots}}' indicator-color='{{indicatorColor}}' indicator-active-color='{{indicatorActiveColor}}' autoplay="{{autoplay}}" interval='{{interval}}' duration="{{duration}}" circular='{{circular}}'>
       <block wx:for="{{imgUrls}}">
         <swiper-item>
@@ -26,14 +26,13 @@
 
   <!-- 进度条 -->
   <view class="process">
-      <progress percent="32" show-info stroke-width='10' font-size="20" activeColor="green" backgroundColor="#ccc" active="{{true}}"/>
+    <progress percent="32" show-info stroke-width='10' font-size="20" activeColor="green" backgroundColor="#ccc" active="{{true}}" />
   </view>
 
 
   <!-- 按钮样式/事件 -->
   <view class="button">
-    <button type="default" size="deafult" loading="{{true}}" plain="{{true}}" 
-    disabled="{{true}}" bindtap="default" hover-class="hover_default">default</button>
+    <button type="default" size="deafult" loading="{{true}}" plain="{{true}}" disabled="{{true}}" bindtap="default" hover-class="hover_default">default</button>
 
     <button type="primary" loading="{{false}}" plain="{{false}}" disabled="{{false}}" bindtap="primary" hover-class="hover-primary">primary</button>
 
@@ -53,15 +52,15 @@
     </view> -->
 
     <view>
-        <!-- 多选框点击选择，获取checkbox的值  -->
-        <checkbox-group bindchange="checkboxChange">
-            <label wx:for="{{items}}">
-              <checkbox value="{{item.name}}" checked="{{checked}}"/>{{item.value}}
-              <view></view>
-            </label>
-        </checkbox-group>
+      <!-- 多选框点击选择，获取checkbox的值  -->
+      <checkbox-group bindchange="checkboxChange">
+        <label wx:for="{{items}}">
+          <checkbox value="{{item.name}}" checked="{{checked}}" />{{item.value}}
+          <view></view>
+        </label>
+      </checkbox-group>
     </view>
-    
+
   </view>
 
   <!-- input 输入框 -->
@@ -76,104 +75,142 @@
 
 
   <!-- form 表单事件 -->
-    <form bindsubmit="bindSubmit" bindreset="bindReset">
-       <view class="section">
-          <view class="section_title">switch开关</view>
-          <switch name="switch"/>
-       </view>
+  <form bindsubmit="bindSubmit" bindreset="bindReset">
+    <view class="section">
+      <view class="section_title">switch开关</view>
+      <switch name="switch" />
+    </view>
 
-       <view class='section'>
-        <view class='section_title'>slider</view>
-        <slider name="slider" show-value color='#ccc' activeColor='green' block-color='#666'></slider>
-       </view>
+    <view class='section'>
+      <view class='section_title'>slider</view>
+      <slider name="slider" show-value color='#ccc' activeColor='green' block-color='#666'></slider>
+    </view>
 
-       <view class='section'>
-          <view class='section_title'>input</view>
-          <input name="username" type='text' placeholder='请输入你的名字'></input>
-       </view>
+    <view class='section'>
+      <view class='section_title'>input</view>
+      <input name="username" type='text' placeholder='请输入你的名字'></input>
+    </view>
 
-       <view class='section'>
-          <view class='section_title'> radio</view>
-          <radio-group name="radio_group">
-            <label><radio value='radio1' />radio1</label> <view></view>
-            <label><radio value='radio2' />radio2</label>
-          </radio-group>
-       </view>
+    <view class='section'>
+      <view class='section_title'> radio</view>
+      <radio-group name="radio_group">
+        <label>
+          <radio value='radio1' />radio1</label>
+        <view></view>
+        <label>
+          <radio value='radio2' />radio2</label>
+      </radio-group>
+    </view>
 
-       <view class='section'>
-          <view class='section_title'>checkbox</view>
-          <checkbox-group name="checkbox_group">
-           <label><checkbox value='checkbox1' />checkbox1</label>  <view></view>
-           <label><checkbox value='checkbox2' />checkbox2</label>  
-          </checkbox-group>
-       </view>
+    <view class='section'>
+      <view class='section_title'>checkbox</view>
+      <checkbox-group name="checkbox_group">
+        <label>
+          <checkbox value='checkbox1' />checkbox1</label>
+        <view></view>
+        <label>
+          <checkbox value='checkbox2' />checkbox2</label>
+      </checkbox-group>
+    </view>
 
 
-      <view class='btn'>
-        <button formType='submit' type="primary" >提交</button>
-        <button formType='reset' type='warn'>重置</button>
+    <view class='btn'>
+      <button formType='submit' type="primary">提交</button>
+      <button formType='reset' type='warn'>重置</button>
+    </view>
+
+
+  </form>
+
+
+  <view class='picker'>
+    <text>picker 选择器，暂时跳过</text>
+  </view>
+
+  <!-- slider -->
+  <view class='slider'>
+    <view class='section'>
+      <text>设置step</text>
+      <view>
+        <slider min="0" max="100" step="5" show-value />
+      </view>
+    </view>
+
+    <view class='section'>
+      <text>禁用</text>
+      <view>
+        <slider min="20" max="100" step="5" show-value disabled/>
+      </view>
+    </view>
+
+
+    <view class='section'>
+      <text>使用</text>
+      <view>
+        <slider min="20" max="100" show-value backgroundColor='#ccc' activeColor='green' block-color='green' block-size='20' bindchange='sliderChange' bindchanging='bindChanging' />
+      </view>
+    </view>
+
+  </view>
+
+
+  <!-- switch -->
+  <view class='switch'>
+    <form bindsubmit='switchBindSubmit' bindreset='switchBindReset'>
+      <view>
+        <text>选中</text>
+        <switch checked='{{true}}' name="select"></switch>
       </view>
 
-    
+      <view>
+        <text>禁用</text>
+        <switch disabled name='disable' checked='{{true}}' color='#ddd'></switch>
+      </view>
+
+      <view>
+        <text>样式为checkbox</text>
+        <switch type='checkbox' name='checkboxs'></switch>
+      </view>
+
+      <view class='btn'>
+        <button formType='submit' type='primary' size='mini'>提交测试</button>
+        <button form-type='reset' type='warn' size='mini'>重新选择</button>
+      </view>
+
+    </form>
+
+  </view>
+
+  <view class='text_content'>
+    <form bindsubmit='textSubmit'>
+      <textarea bindtap='textContent' placeholder='自己写的textarea' name="content" show-confirm-bar='{{false}}'></textarea>
+      <button form-type='submit' type='primary'>上传</button>
     </form>
 
 
-    <view class='picker'>
-        <text>picker 选择器，暂时跳过</text>
+    <view class="section">
+      <textarea bindblur="bindTextAreaBlur" auto-height placeholder="自动变高" />
     </view>
-
-    <!-- slider -->
-    <view class='slider'>
-      <view class='section'>
-          <text>设置step</text>
-          <view>
-            <slider min="0" max="100" step="5" show-value />
-          </view>
-      </view>
-
-      <view class='section'>
-          <text>禁用</text>
-          <view>
-            <slider min="20" max="100" step="5" show-value disabled/>
-          </view>
-      </view>
-
-
-      <view class='section'>
-          <text>使用</text>
-          <view>
-            <slider min="20" max="100" show-value backgroundColor='#ccc' activeColor='green' block-color='green' block-size='20' bindchange='sliderChange' bindchanging='bindChanging'/>
-          </view>
-      </view>
-      
+    <view class="section">
+      <textarea placeholder="placeholder颜色是红色的" placeholder-style="color:red;" />
     </view>
-
-
-    <!-- switch -->
-    <view class='switch'>
-      <form bindsubmit='switchBindSubmit' bindreset='switchBindReset'>
-         <view>
-          <text>选中</text>
-          <switch checked='{{true}}' name="select"></switch>
-        </view>
-      
-        <view>
-          <text>禁用</text>
-          <switch disabled name='disable' checked='{{true}}' color='#ddd'></switch>
-        </view>
-
-        <view>
-          <text>样式为checkbox</text>
-          <switch type='checkbox' name='checkboxs'></switch>
-        </view>
-
-        <view class='btn'>
-          <button formType='submit' type='primary' size='mini'>提交测试</button>
-          <button form-type='reset' type='warn' size='mini'>重新选择</button>
-        </view>
-        
+    <view class="section">
+      <textarea placeholder="这是一个可以自动聚焦的textarea" auto-focus />
+    </view>
+    <view class="section">
+      <textarea placeholder="这个只有在按钮点击的时候才聚焦" focus="{{focus}}" />
+      <view class="btn-area">
+        <button bindtap="bindButtonTap">使得输入框获取焦点</button>
+      </view>
+    </view>
+    <view class="section">
+      <form bindsubmit="bindFormSubmit">
+        <textarea placeholder="form 中的 textarea" name="textarea" />
+        <button form-type="submit"> 提交 </button>
       </form>
-        
     </view>
+
+
+  </view>
 
 </view>
