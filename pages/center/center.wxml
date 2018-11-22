@@ -7,9 +7,13 @@
 
 <!-- 媒体组件 之音频 audio-->
 <view class='audio'>
-  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop bindplay=''></audio>
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
 
   <button size='mini' bindtap='start' type='primary'>开始</button>
   <button size='mini' bindtap='pause' type='primary' style="margin: 10rpx;">暂停</button>
   <button size='mini' bindtap='restart' type='warn'>停止</button>
+</view>
+
+<view class='imgs'>
+  <image src='{{poster}}' style='width: 400rpx;heigth:300rpx; background-color: #666;margin: 0 auto;' mode="top"></image>
 </view>
