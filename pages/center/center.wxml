@@ -4,3 +4,12 @@
   <navigator class='content' url="../index/index" open-type='switchTab'>
   </navigator>
 </view>
+
+<!-- 媒体组件 之音频 audio-->
+<view class='audio'>
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop bindplay=''></audio>
+
+  <button size='mini' bindtap='start' type='primary'>开始</button>
+  <button size='mini' bindtap='pause' type='primary' style="margin: 10rpx;">暂停</button>
+  <button size='mini' bindtap='restart' type='warn'>停止</button>
+</view>
