@@ -1,4 +1,16 @@
-/* pages/center/center.wxss */
+@import "../../lib/weui.wxss";
+.weui-cells{
+  margin-top: 80rpx;
+  text-align: left;
+}
+.weui-label{
+  width: 5em;
+}
+
+.page-body-button {
+  margin: 30rpx 0;
+}
+
 page{
   width:750rpx;
 }
@@ -18,3 +30,7 @@ page{
 .audio{
   margin: 40rpx;
 }
+
+.vedio{
+  margin-left: 40rpx;
+} 

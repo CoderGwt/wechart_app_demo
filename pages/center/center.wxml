@@ -7,6 +7,7 @@
 
 <!-- 媒体组件 之音频 audio-->
 <view class='audio'>
+  <view>audio</view>
   <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
 
   <button size='mini' bindtap='start' type='primary'>开始</button>
@@ -14,6 +15,36 @@
   <button size='mini' bindtap='restart' type='warn'>停止</button>
 </view>
 
+<!-- image -->
 <view class='imgs'>
+  <view>image</view>
   <image src='{{poster}}' style='width: 400rpx;heigth:300rpx; background-color: #666;margin: 0 auto;' mode="top"></image>
+</view>
+
+<!-- video -->
+<view class='vedio'>
+  <view>video</view>
+  <view class="section tc">
+  <video id="myVideo" src="{{videoUrl}}" controls danmu-list='{{danmuList}}' enable-danmu danmu-btn bindended="bindEnded" muted="{{muted}}"></video>
+</view>
+
+<view class="weui-cells">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">弹幕内容</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindblur="bindInputBlur" class="weui-input" type="text" placeholder="在此处输入弹幕内容" />
+        </view>
+      </view>
+    </view>
+
+<view class='btns'>
+<button bindtap="bindSendDanmu" class="page-body-button" type="primary" formType="submit">发送弹幕</button>
+  <button bindtap='muted'>静音</button>
+  <button bindtap='videoPlay' type='primary'>开始播放</button>
+  <button bindtap='videoRestart' type='warn'>从头开始</button>
+  <button bindtap='videoPause' type='primary'>暂停播放</button>
+</view>
+
 </view>
