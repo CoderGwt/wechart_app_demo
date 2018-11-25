@@ -24,10 +24,12 @@ Page({
     })
   },
 
+  // 输入框获取焦点事件
   getFocus: function(){
     console.log("输入框获取到了焦点")
   },
 
+  // 输入框失去焦点事件
   lostFocus: function(ev){
     console.log("输入框失去了焦点");
     console.log(ev)
@@ -36,6 +38,23 @@ Page({
     })
   },
 
+  // 冒泡事件
+  bindOuter: function(){
+    console.log("bindta 外面盒子")
+  },
+
+  bindInner: function(){
+    console.log("bindtap 里面盒子")
+  },
+
+  // 使用catchtap
+  catchOuter: function(){
+    console.log("catchtap 外面的盒子")
+  },
+
+  catchInner: function(){
+    console.log("catcatap 里面的盒子")
+  },
 
 
   /**

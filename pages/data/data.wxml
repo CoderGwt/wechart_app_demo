@@ -1,7 +1,18 @@
 <!--pages/data/data.wxml-->
+<!-- 简单的事件监听 -->
 <view bind:tap="click">bind:tap 点击</view>
 <view bindtap='click2'>bindtap 点击</view>
 
 <view>{{ value }}</view>
 <input bindblur='lostFocus' bindfocus='getFocus' data-id='1' bindinput='bindInput'></input>
 <view>{{ msg }}</view>
+
+<!-- 事件冒泡 -->
+<!-- 使用bindtap点击会出现冒泡事件 -->
+<view class='outer' bindtap='bindOuter'>
+  <view class='inner' bindtap='bindInner'></view>
+</view>  
+<!-- 使用 catchtap 点击防止冒泡事件 的发生 -->
+<view class='outer' catchtap='catchOuter'>
+  <view class='inner' catchtap='catchInner'></view> 
+</view>

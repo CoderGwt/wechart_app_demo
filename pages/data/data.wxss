@@ -4,3 +4,16 @@ input{
   height: 60rpx;
   border: 1px solid red;
 }
+
+.outer{
+  width: 300rpx;
+  height: 300rpx;
+  background: #666;
+  margin: 40rpx;
+}
+
+.inner{
+  width: 200rpx;
+  height: 200rpx;
+  background: #ccc;
+}
