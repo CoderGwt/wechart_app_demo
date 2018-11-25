@@ -1,1 +1,6 @@
 /* pages/data/data.wxss */
+input{
+  width: 600rpx;
+  height: 60rpx;
+  border: 1px solid red;
+}

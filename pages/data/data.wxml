@@ -1,2 +1,7 @@
 <!--pages/data/data.wxml-->
-<text>pages/data/data.wxml</text>
+<view bind:tap="click">bind:tap 点击</view>
+<view bindtap='click2'>bindtap 点击</view>
+
+<view>{{ value }}</view>
+<input bindblur='lostFocus' bindfocus='getFocus' data-id='1' bindinput='bindInput'></input>
+<view>{{ msg }}</view>
