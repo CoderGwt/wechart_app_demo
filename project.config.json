@@ -33,12 +33,24 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
 					"name": "个人中心",
-					"pathName": "pages/center/center"
+					"pathName": "pages/center/center",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "事件监听",
+					"pathName": "pages/data/data",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index"
 				}
 			]
 		}
