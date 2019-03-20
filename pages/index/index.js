@@ -24,33 +24,70 @@ Page({
     "focus": false,
 
     // checkbox
-    "items": [
-      {name: "CHINA", value: "中国", checked: "true"},
-      {name: "UK", value: "英国"},
-      {name: "USA", value: "美国"},
-      {name: "FRANCE", value: "法国"},
-      {name: "JAPAN", value: "日本"},
+    "items": [{
+        name: "CHINA",
+        value: "中国",
+        checked: "true"
+      },
+      {
+        name: "UK",
+        value: "英国"
+      },
+      {
+        name: "USA",
+        value: "美国"
+      },
+      {
+        name: "FRANCE",
+        value: "法国"
+      },
+      {
+        name: "JAPAN",
+        value: "日本"
+      },
+    ],
+
+    "users": [{
+        name: "python",
+        age: 22,
+        gender: "男"
+      },
+      {
+        name: "flask",
+        age: 16,
+        gender: "女"
+      },
+      {
+        name: "linux",
+        age: 8,
+        gender: "女"
+      },
+      {
+        name: "django",
+        age: 26,
+        gender: "男"
+      },
     ]
 
   },
 
-  default: function(data){
+  default: function(data) {
     console.log("default")
   },
 
-  primary: function(data){
+  primary: function(data) {
     console.log("primary")
   },
 
-  warn: function(data){
+  warn: function(data) {
     console.log("warn")
   },
 
-  checkboxChange: function(data){
+  checkboxChange: function(data) {
     console.log(data.detail.value)
   },
 
-  bindInput:function(data){
+  bindInput: function(data) {
     console.log(data);
     console.log(data.detail);
     console.log(data.detail.value)
@@ -60,84 +97,84 @@ Page({
   },
 
   // 表单点击提交事件
-  bindSubmit: function(e){
+  bindSubmit: function(e) {
     console.log("点击提交按钮，表单数据 ", e.detail.value)
   },
 
-  bindReset: function(e){
+  bindReset: function(e) {
     console.log("点击了重置按钮")
   },
 
 
   // slider change
   // 完成一次拖动后触发的事件
-  sliderChange: function(e){
+  sliderChange: function(e) {
     console.log(e.detail.value);
   },
   // 拖动过程中触发的事件
-  bindChanging: function(e){
+  bindChanging: function(e) {
     console.log(e.detail.value)
   },
 
 
   // switch 
-  switchBindSubmit: function(e){
+  switchBindSubmit: function(e) {
     console.log(e);
     console.log(e.detail);
     console.log(e.detail.value)
   },
 
-  switchBindReset: function(e){
+  switchBindReset: function(e) {
     console.log("点击了重新选择");
   },
 
   // text 
-  textSubmit: function(e){
+  textSubmit: function(e) {
     console.log(e);
     console.log(e.detail.value);
     console.log(e.detail.value.content);
   },
 
-  bindButtonTap: function () {
+  bindButtonTap: function() {
     this.setData({
       focus: true
     })
   },
-  bindTextAreaBlur: function (e) {
+  bindTextAreaBlur: function(e) {
     console.log(e.detail.value)
   },
-  bindFormSubmit: function (e) {
+  bindFormSubmit: function(e) {
     console.log(e.detail.value.textarea)
   },
 
 
   // icon 图标
-  iconSuccess: function(e){
+  iconSuccess: function(e) {
     console.log("点击了success")
   },
-  iconSuccessNoCircle: function (e) {
+  iconSuccessNoCircle: function(e) {
     console.log("点击了iconSuccessNoCircle")
   },
-  iconInfo: function (e) {
+  iconInfo: function(e) {
     console.log("点击了iconInfo")
   },
-  iconWarn: function (e) {
+  iconWarn: function(e) {
     console.log("点击了iconWarn")
   },
 
-  iconWaiting: function (e) {
+  iconWaiting: function(e) {
     console.log("点击了iconWaiting")
   },
-  iconCacel: function (e) {
+  iconCacel: function(e) {
     console.log("iconCacel")
   },
-  iconDownload: function (e) {
+  iconDownload: function(e) {
     console.log("点击了iconDownload")
   },
-  iconSearch: function (e) {
+  iconSearch: function(e) {
     console.log("点击了iconSearch")
   },
-  iconClear: function (e) {
+  iconClear: function(e) {
     console.log("点击了iconClear")
   },
 

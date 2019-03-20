@@ -2,11 +2,11 @@
   <view class='banner'>
     <!-- 轮播图 -->
     <swiper indicator-dots='{{indicatorDots}}' indicator-color='{{indicatorColor}}' indicator-active-color='{{indicatorActiveColor}}' autoplay="{{autoplay}}" interval='{{interval}}' duration="{{duration}}" circular='{{circular}}'>
-      <block wx:for="{{imgUrls}}">
-        <swiper-item>
+      
+        <swiper-item wx:for="{{imgUrls}}">
           <image src='{{item}}'></image>
         </swiper-item>
-      </block>
+      
     </swiper>
   </view>
 
@@ -225,6 +225,31 @@
     </view>
 
 
+
   </view>
+
+  <!-- 条件渲染 -->
+  <view class='condition'>
+    <view class='title'>
+      <text>序号</text>
+      <text>名字</text>
+      <text>性别</text>
+      <text>年龄</text>
+      <text>身份</text>
+    </view>
+    <view wx:for="{{users}}" class='content'>
+      <text>{{ index+1 }}</text>
+      <text>{{item.name}}</text>
+      <text>{{item.gender}}</text>
+      <text>{{item.age}}</text>
+
+      <!-- 小程序中的判断 -->
+      <text wx:if="{{ item.age <= 10}}">儿童</text>
+      <text wx:elif="{{ item.age < 18 }}">未成年</text>
+      <text wx:elif="{{ item.age < 24 }}">少年</text>
+      <text wx:else>成年</text>
+    </view>
+  </view>
+
 
 </view>

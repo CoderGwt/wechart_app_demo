@@ -21,3 +21,15 @@
 .button .hover-warn{
   background-color: green;
 }
+
+.condition view:first-child{
+  margin: 20rpx 0;
+}
+
+.condition view{
+  display: flex;
+} 
+
+.condition view text{
+  flex: 1;
+}
