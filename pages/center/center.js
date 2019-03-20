@@ -53,10 +53,16 @@ Page({
   },
 
   // 静音处理
-  muted: function(e){
+  mutedFalse: function(e){
     this.setData({
          muted: true
     });
+  },
+
+  mutedTrue: function(e){
+    this.setData({
+      muted: false
+    })
   },
 
   // 视频暂停

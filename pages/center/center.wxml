@@ -41,7 +41,8 @@
 
 <view class='btns'>
 <button bindtap="bindSendDanmu" class="page-body-button" type="primary" formType="submit">发送弹幕</button>
-  <button bindtap='muted'>静音</button>
+  <button bindtap='mutedFalse' wx:if="{{muted==false}}">静音</button>
+  <button bindtap='mutedTrue' wx:if="{{muted==true}}">声音</button>
   <button bindtap='videoPlay' type='primary'>开始播放</button>
   <button bindtap='videoRestart' type='warn'>从头开始</button>
   <button bindtap='videoPause' type='primary'>暂停播放</button>
