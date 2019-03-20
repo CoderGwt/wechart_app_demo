@@ -16,3 +16,12 @@
 <view class='outer' catchtap='catchOuter'>
   <view class='inner' catchtap='catchInner'></view> 
 </view>
+
+<view data-id='12' data-name='对象' bindtap='getEvent'>事件对象</view>
+
+
+<button class='apiTest' bindtap='send'>API测试</button>
+<button class='' bindtap='getLocation'>获取位置</button>
+<button bindtap='loading'>加载</button>
+<button bindtap="toast">toast</button>
+<button bindtap='sheet'>列表</button>
