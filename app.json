@@ -8,7 +8,7 @@
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#262626",
     "navigationBarTitleText": "基础知识汇总",
-    "backgroundcolor":"#f0f0f0"
+    "backgroundColor":"#f0f0f0"
   },
   "tabBar": {
     "color": "D78B09",
@@ -36,5 +36,11 @@
       }
     ]
 
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   }
+
 }
