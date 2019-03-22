@@ -1,1 +1,12 @@
 /* pages/review/review.wxss */
+input{
+  width: 200rpx;
+  height: 50rpx;
+  border: 1rpx solid red;
+  margin: 0 auto;
+  border-radius: 10rpx;
+}
+
+image{
+  width: 100%;
+}

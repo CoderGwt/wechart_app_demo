@@ -1,2 +1,27 @@
-<!--pages/review/review.wxml-->
-<text>pages/review/review.wxml</text>
+<view style='font-size:50rpx;text-align: center'>组件复习</view>
+<view>view 是块级标签</view>
+<text>行内标签text1</text>
+<text>行内标签text2</text>
+
+<button>按钮</button>
+<input type="text" />				
+<checkbox />
+<radio/>
+
+<image src='../../images/head.jpg'></image>
+
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+  indicator-color="{{ indicatorColor }}"
+  indicator-active-color="{{ indicatorActiveColor }}"
+  circular="{{ circular }}"
+>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
