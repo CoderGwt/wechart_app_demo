@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/review/review",
     "pages/index/index",
     "pages/data/data",
     "pages/center/center"
