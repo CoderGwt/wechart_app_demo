@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "知识复习",
+  "navigationBarBackgroundColor": "#000044", 
+  "navigationBarTextStyle": "white",
+  "backgroundColor": "#004400",
+  "backgroundTextStyle": "dark",
+  "enablePullDownRefresh": true
+}
