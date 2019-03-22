@@ -3,7 +3,8 @@
     "pages/review/review",
     "pages/index/index",
     "pages/data/data",
-    "pages/center/center"
+    "pages/center/center",
+    "pages/nav/nav"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -34,6 +35,12 @@
         "pagePath": "pages/center/center",
         "iconPath": "icons/face-active.png",
         "selectedIconPath": "icons/face-default.png"
+      },
+      {
+        "text": "知识复习",
+        "pagePath": "pages/review/review",
+        "iconPath": "icons/home-active.png",
+        "selectedIconPath": "icons/home-default.png"
       }
     ]
 
