@@ -4,7 +4,9 @@
     "pages/index/index",
     "pages/data/data",
     "pages/center/center",
-    "pages/nav/nav"
+    "pages/nav/nav",
+    "pages/form/form",
+    "pages/yzm/yzm"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -41,6 +43,12 @@
         "pagePath": "pages/review/review",
         "iconPath": "icons/home-active.png",
         "selectedIconPath": "icons/home-default.png"
+      },
+      {
+        "text": "表单布局",
+        "pagePath": "pages/form/form",
+        "iconPath": "icons/cards-active.png",
+        "selectedIconPath": "icons/cards-default.png"
       }
     ]
 
