@@ -1,0 +1,21 @@
+<!--pages/form/form.wxml-->
+<view class='box'>
+  <form>
+    <view class='line'>
+      <text>用户名：</text>
+      <input></input>
+    </view>
+
+    <view class='line'>
+      <text>密码：</text>
+      <input></input>
+    </view>
+
+    <view class='forget'>
+      <navigator>忘记密码</navigator>
+      <navigator url='/pages/yzm/yzm'>立即注册</navigator>
+    </view>
+
+    <button class='login'>登录</button>
+  </form>
+</view>
