@@ -29,9 +29,22 @@
 }
 
 button{
-  width: 80%;
+  width: 50%;
   height: 100rpx;
   background: #cc88ff;
   margin-top: 20rpx;
 }
 
+/* 动画属性 */
+@keyframes change{
+  form{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(0.8)
+  }
+}
+
+.submit{
+  animation: change 1s infinite alternate;
+}
