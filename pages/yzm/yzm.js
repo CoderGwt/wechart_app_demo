@@ -5,7 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
+    inputFocus: false,
+    maxLength: 6,
+    msg: "",
+  },
 
+  bindInput: function(res){
+    console.log(res.detail.value);
+    this.setData({
+      msg: res.detail.value
+    })
+  },
+
+  getFocus: function(res){
+    this.setData({
+      inputFocus: true
+    })
   },
 
   /**

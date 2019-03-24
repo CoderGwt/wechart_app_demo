@@ -1,1 +1,37 @@
-/* pages/yzm/yzm.wxss */
+.title text{
+  font-size: 36rpx;
+}
+
+.msg {
+  display: flex;
+  margin: 20rpx;
+}
+
+.msg input{
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+  flex: 1;
+  text-align: center;
+  line-height: 100rpx;
+  margin-right: 14rpx;
+}
+
+.msg input.inputValue{
+  border: 1rpx solid orange;
+}
+
+.code{
+  /* 为什么不能直接用 display:none呢，这样子的话，就获取不到输入内容了？ */
+  width: 0rpx;
+  height: 0rpx;
+}
+
+button{
+  width: 80%;
+  height: 100rpx;
+  background: #cc88ff;
+  margin-top: 20rpx;
+}
+

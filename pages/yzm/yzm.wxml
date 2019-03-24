@@ -1,2 +1,22 @@
-<!--pages/yzm/yzm.wxml-->
-<text>pages/yzm/yzm.wxml</text>
+<view class='title'>
+    <text>请输入验证码</text>
+</view>
+
+<!-- <view class='msg'>
+  <input maxlength='1' bindtap='getFocus' value='{{msg[0]}}' disabled focus></input>
+  <input maxlength='1' value='{{msg[1]}}' disabled></input>
+  <input maxlength='1' value='{{msg[2]}}' disabled></input>
+  <input maxlength='1' value='{{msg[3]}}' disabled></input>
+  <input maxlength='1' value='{{msg[4]}}' disabled></input>
+  <input maxlength='1' value='{{msg[5]}}' disabled></input>
+</view> -->
+
+<view class='msg'>
+  <block  wx:for="{{maxLength}}" wx:key="index">
+    <input class='{{msg.length==index ? "inputValue" : ""}}' bindtap='getFocus' value='{{msg.length>0?msg[index]:""}}' disabled></input>
+  </block>
+  
+</view>
+
+<input maxlength='{{maxLength}}' class='code' bindinput="bindInput" focus='{{inputFocus}}'></input>
+<button>提交</button>
