@@ -19,4 +19,4 @@
 </view>
 
 <input maxlength='{{maxLength}}' class='code' bindinput="bindInput" focus='{{inputFocus}}'></input>
-<button>提交</button>
+<button class='{{msg.length==6?"submit":"" }}'>提交</button>
