@@ -3,17 +3,21 @@
   <form>
     <view class='line'>
       <text>用户名：</text>
-      <input></input>
+      <input bindinput='userNameInput'></input>
     </view>
 
     <view class='line'>
       <text>密码：</text>
-      <input></input>
+      <input type='password'></input>
     </view>
 
     <view class='forget'>
       <navigator>忘记密码</navigator>
       <navigator url='/pages/yzm/yzm'>立即注册</navigator>
+    </view>
+
+    <view class='tip'>
+      <text wx:if="{{inputName.length>10}}">用户名长度不能超出8位</text>
     </view>
 
     <button class='login'>登录</button>

@@ -50,6 +50,11 @@
   margin-right: 10rpx;
 }
 
+.tip text{
+  color: red;
+  margin-left: 20rpx;
+}
+
 .login{
   width: 200rpx;
   height: 80rpx;
